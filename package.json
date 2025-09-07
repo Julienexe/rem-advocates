@@ -1,0 +1,30 @@
+{
+  "name": "rem-advocates-nunjucks",
+  "version": "1.0.0",
+    "scripts": {
+    "build:html": "node build.mjs",
+    "build:assets": "cpx \"assets/**/*\" dist/assets",
+    "build:downloads": "cpx \"downloads/**/*\" dist/downloads",
+    "build": "npm run build:html && npm run build:assets && npm run build:downloads",
+
+    "watch:html": "chokidar \"templates/**/*.njk\" -c \"npm run build:html\"",
+    "watch:assets": "chokidar \"assets/**/*\" -c \"npm run build:assets\"",
+    "watch:downloads": "chokidar \"downloads/**/*\" -c \"npm run build:downloads\"",
+    "watch": "npm-run-all --parallel watch:html watch:assets watch:downloads serve",
+
+    "serve": "lite-server --config bs-config.js",
+    "docker:build": "docker build -t rem-advocates-web . --no-cache",
+    "docker:run": "docker run -p 3000:3000 rem-advocates-web",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down",
+    "docker:tag": "docker tag rem-advocates-web julienzip/rem-advocates-web",
+    "docker:push": "docker push julienzip/rem-advocates-web"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "cpx": "^1.5.0",
+    "lite-server": "^2.6.1",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.4"
+  }
+}
