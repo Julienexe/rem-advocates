@@ -2,6 +2,7 @@
 {% block content %}
 <div class="service-banner-img">
   <div class="ovrllay">
+    {% include "navbar.njk" %}
     <section id="banner" class="py-70">
       <div class="container">
         <div class="row py-70">
@@ -25,134 +26,199 @@
       <div class="title wow fadeInUp">
         <h1>Our Services</h1>
         <div class="hed_img">
-          <img src="/images/headding-img.png">
+          <img src="assets/images/headding-img.png">
         </div>
         <p>Expert legal services tailored to your needs</p>
       </div>
     </div>
 
-    <div class="row about_row py-40">
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service1.png">
-          </div>
-          <h2 class="Practice">Land Law & Real Estate</h2>
-          <p class="bottom-s">Expert guidance in property matters and construction law</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service2.png">
-          </div>
-          <h2 class="Practice">Tax Law & Strategy</h2>
-          <p class="bottom-s">Strategic tax planning and compliance services</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
-        </div>
-      </div>
+    <div class="row about_row  py-40">
+            <!--#about-text start -->
 
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service3.png">
-          </div>
-          <h2 class="Practice">Intellectual Property</h2>
-          <p class="bottom-s">Protecting your intellectual assets and innovations</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service2.png">
+                    </div>
+                    <h2 class="Practice"> Land Law, Real Estate & Construction </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="row mt-50 py-40">
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service4.png">
-          </div>
-          <h2 class="Practice">Corporate Law</h2>
-          <p class="bottom-s">Comprehensive business legal solutions</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
-        </div>
-      </div>
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service_c.png">
+                    </div>
+                    <h2 class="Practice">Technology, Data Protection & Digital Law </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service5.png">
-          </div>
-          <h2 class="Practice">Employment Law</h2>
-          <p class="bottom-s">Employment relations and workplace solutions</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service6.png">
-          </div>
-          <h2 class="Practice">Business Restructuring</h2>
-          <p class="bottom-s">Solutions for business recovery and reorganization</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
+            <!--#End about-text  -->
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service_e.png">
+                    </div>
+                    <h2 class="Practice">Intellectual Property & Innovation Law </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="row mt-50  py-40">
+            <!--#about-text start -->
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service_d.png">
+                    </div>
+                    <h2 class="Practice"> Tax Law & Strategy </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/labor.png">
+                    </div>
+                    <h2 class="Practice"> Employment & Labour Law </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="row mt-50 py-40">
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service1.png">
-          </div>
-          <h2 class="Practice">Regulatory Audits</h2>
-          <p class="bottom-s">Comprehensive compliance review services</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service2.png">
+                    </div>
+                    <h2 class="Practice">Legal & Regulatory Audits </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+            <!--#End about-text  -->
         </div>
-      </div>
+        <div class="row mt-50  py-40">
+            <!--#about-text start -->
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service4.png">
+                    </div>
+                    <h2 class="Practice"> Insolvency & Business Restructuring</h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service2.png">
-          </div>
-          <h2 class="Practice">Dispute Resolution</h2>
-          <p class="bottom-s">Litigation & Alternative Dispute Resolution</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
-        </div>
-      </div>
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service3.png">
+                    </div>
+                    <h2 class="Practice"> Dispute Resolution: Litigation & ADR </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-        <div class="service-s">
-          <div class="servise-top wow fadeInUp">
-            <img src="/images/service3.png">
-          </div>
-          <h2 class="Practice">Public Procurement</h2>
-          <p class="bottom-s">Public-private partnership expertise</p>
-          <div class="button-div">
-            <a href="" class="button-buttom">read more</a>
-          </div>
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/company-icon.png">
+                    </div>
+                    <h2 class="Practice">Company Secretarial & Compliance </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+            <!--#End about-text  -->
         </div>
-      </div>
-    </div>
+        <div class="row mt-50  py-40">
+            <!--#about-text start -->
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service4.png">
+                    </div>
+                    <h2 class="Practice"> Public Procurement & PPPs</h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/advisory-icon.png">
+                    </div>
+                    <h2 class="Practice"> ESG & Sustainability Advisory</h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service2.png">
+                    </div>
+                    <h2 class="Practice"> Corporate & Commercial Law </h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+            <!--#End about-text  -->
+        </div>
+        <div class="row mt-50  py-40">
+            <!--#about-text start -->
+            <div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                <div class="service-s">
+                    <div class="servise-top wow fadeInUp">
+                        <img src="assets/images/service_e.png">
+                    </div>
+                    <h2 class="Practice"> Immigration & Citizenship Law</h2>
+                    <p class="bottom-s">Our criminal defense attorneys will <br>protect your rights in court. </p>
+                    <div class="button-div">
+                        <a href="" class="button-buttom"> read more </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--#End about-text  -->
+        </div>
   </div>
 </div>
 
